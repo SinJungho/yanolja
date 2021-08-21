@@ -1,0 +1,52 @@
+@import "reset.css";
+
+.header{
+    background-color: bisque;
+    height: 61px;
+    /* display: flex; */
+}
+
+.header ul{
+    width: 500px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.header .header__nav > li{
+    float: left;
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: bisque;
+    position: relative;
+}
+
+.header .header__nav > li:hover .header__nav-sub{
+    display: block;
+}
+
+.header .header__nav > li a{
+    display: block;
+}
+
+.header .header__nav > li a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.header .header__nav .header__nav-sub{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.header .header__nav .header__nav-sub li{
+    background-color: tomato;
+}
+
+.header .header__nav .header__nav-sub li a:hover{
+    background-color: yellowgreen;
+}

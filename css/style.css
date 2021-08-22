@@ -1,5 +1,9 @@
 @import "reset.css";
 
+html{
+    scroll-behavior: smooth;
+}
+
 .header{
     /* background-color: bisque; */
     height: 61px;
@@ -39,8 +43,8 @@
 }
 
 .header .header__nav > li a:hover{
-    background-color: blue;
-    color: white;
+    /* background-color: blue; */
+    color: #000;
 }
 
 .header .header__nav .header__nav-sub{
@@ -52,22 +56,59 @@
 }
 
 .header .header__nav .header__nav-sub li{
-    background-color: tomato;
+    /* background-color: white; */
+    color: #000;
 }
 
 .header .header__nav .header__nav-sub li a:hover{
-    background-color: yellowgreen;
+    color: #000;
 }
 
 .header .header__lang-nav{
     display: flex;
+    margin-left: 15px;
+}
+
+.header .header__lang-nav .right-line::after{
+    content: "";
+    position: absolute;
+    top: 55%;
+    right: 31px;
+    width: 2px;
+    height: 8px;
+    background: #b4b4b4;
+    transform: translateY(-50%);
 }
 
 .header .header__lang-nav li a{
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
+    color: white;
 }
+
+/* header title, text */
+.header__title{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 15%; */
+    /* margin-top: 33%; */
+    height: 739px;
+    position: relative;
+}
+
+.header__title .header__title__text{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    width: 236px;
+    /* height: 130px; */
+    line-height: 52px;
+    position: absolute;
+    right: 16%;
+    top: 52%;
+}
+
 /* header video */
 .header__bg{
     height: 800px;

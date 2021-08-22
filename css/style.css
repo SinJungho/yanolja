@@ -1,15 +1,19 @@
 @import "reset.css";
 
 .header{
-    background-color: bisque;
+    /* background-color: bisque; */
     height: 61px;
-    /* display: flex; */
+    display: flex;
+    align-items: center;
+    margin: 0 70px;
+    position: relative;
 }
 
-.header ul{
-    width: 500px;
+.header .header__nav{
+    width: 900px;
     margin: 0 auto;
     /* overflow: hidden; */
+    display: flex;
 }
 
 .header .header__nav > li{
@@ -18,7 +22,7 @@
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background-color: bisque;
+    /* background-color: bisque; */
     position: relative;
 }
 
@@ -28,6 +32,10 @@
 
 .header .header__nav > li a{
     display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
 }
 
 .header .header__nav > li a:hover{
@@ -49,4 +57,28 @@
 
 .header .header__nav .header__nav-sub li a:hover{
     background-color: yellowgreen;
+}
+
+.header .header__lang-nav{
+    display: flex;
+}
+
+.header .header__lang-nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+/* header video */
+.header__bg{
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.header .header__bg video{
+    width: 100%;
 }

@@ -97,6 +97,21 @@ html{
     margin-right: 10px;
 }
 
+.main__se1__column__button__arrow-white{
+    opacity: 0;
+}
+
+.main__se1__column__button__box:hover .main__se1__column__button__arrow-white{
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 34%;
+}
+
+.main__se1__column__button__box:hover .main__se1__column__button__arrow-black{
+    opacity: 0;
+}
+
 .main__sec1__column__button img{
     margin-right: 10px;
 }

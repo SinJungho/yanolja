@@ -5,13 +5,28 @@ html{
     scroll-behavior: smooth;
 }
 
+@keyframes fadeInText {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    } to{
+        opacity: 3;
+        transform: none;
+    }
+}
 
 .main__sec1{
     margin: 0 70px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main__sec1__column{
     margin-top: 112px;
+}
+
+.main__sec1__column__text{
+    
 }
 
 .main__sec1__column__text > span{
@@ -19,21 +34,26 @@ html{
     font-size: 14px;
     margin-bottom: 19px;
     display: block;
+    animation: fadeInText 2s ease-in-out;
 }
 
 .main__sec1__column__text__title span{
-    font-size: 40px;
+    font-size: 46px;
     font-weight: bold;
     display: block;
 }
 
 .main__sec1__column__text__title > span:nth-child(1){
     margin-bottom: 18px;
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 1s;
 }
 
 
 .main__sec1__column__text__title > span:nth-child(2){
     margin-bottom: 27px;
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 1.5s;
 }
 
 .main__sec1__column__text__sub span{
@@ -41,6 +61,8 @@ html{
     font-weight: bold;
     display: block;
     margin-bottom: 12px;
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 2s;
 }
 
 .main__sec1__column__text__sub span:last-child{
@@ -55,6 +77,8 @@ html{
     height: 55px;
     opacity: 1;
     transition: transform 1s linear,opacity 1s linear;
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 2.5s;
 }
 
 .main__sec1__column__button{
@@ -124,4 +148,24 @@ html{
 .main__se1__column__button__box:hover .main__sec1__column__button__text { 
     color: white;
     transition: .35s ease-in-out;
+}
+
+/* logo video */
+.main__sec1__column__video{
+    width: 490px;
+    height: 490px;
+    margin-right: 60px;
+    position: relative;
+}
+
+.main__sec1__column__video video{
+    border-radius: 18%;
+}
+
+.main__sec1__column__video img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 489px;
+    height: 489px;
 }

@@ -76,7 +76,8 @@ html{
     margin: 0;
     background-color: #fe3478;
     transform: translate3d(-101%,0,0);
-    transition: transform .35s ease-in-out;
+    transition: .35s ease-in-out;
+    opacity: 0;
 }
 
 .main__sec1__column__button__text{
@@ -100,7 +101,12 @@ html{
     margin-right: 10px;
 }
 
-.main__se1__column__button__box:hover{ 
-    transform: translate3d(101%,0,0);
-    
+.main__se1__column__button__box:hover .main__sec1__column__button__fill { 
+    transform: translate3d(0%,0,0);
+    opacity: 1;
+}
+
+.main__se1__column__button__box:hover .main__sec1__column__button__text { 
+    color: white;
+    transition: .35s ease-in-out;
 }

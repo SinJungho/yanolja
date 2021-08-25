@@ -5,18 +5,14 @@ html{
     scroll-behavior: smooth;
 }
 
-@keyframes fadeInText {
-    from{
-        opacity: 0;
-        transform: translateY(20px);
-    } to{
-        opacity: 3;
-        transform: none;
-    }
+body{
+    box-sizing: border-box;
+    height: 1000vh;
 }
 
 .main__sec1{
     margin: 0 70px;
+    margin-bottom: 107px;
     display: flex;
     justify-content: space-between;
 }
@@ -25,16 +21,11 @@ html{
     margin-top: 112px;
 }
 
-.main__sec1__column__text{
-    
-}
-
 .main__sec1__column__text > span{
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 19px;
     display: block;
-    animation: fadeInText 2s ease-in-out;
 }
 
 .main__sec1__column__text__title span{
@@ -45,15 +36,11 @@ html{
 
 .main__sec1__column__text__title > span:nth-child(1){
     margin-bottom: 18px;
-    animation: fadeInText 2s ease-in-out;
-    animation-delay: 1s;
 }
 
 
 .main__sec1__column__text__title > span:nth-child(2){
     margin-bottom: 27px;
-    animation: fadeInText 2s ease-in-out;
-    animation-delay: 1.5s;
 }
 
 .main__sec1__column__text__sub span{
@@ -61,8 +48,6 @@ html{
     font-weight: bold;
     display: block;
     margin-bottom: 12px;
-    animation: fadeInText 2s ease-in-out;
-    animation-delay: 2s;
 }
 
 .main__sec1__column__text__sub span:last-child{
@@ -77,8 +62,6 @@ html{
     height: 55px;
     opacity: 1;
     transition: transform 1s linear,opacity 1s linear;
-    animation: fadeInText 2s ease-in-out;
-    animation-delay: 2.5s;
 }
 
 .main__sec1__column__button{
@@ -88,7 +71,6 @@ html{
     position: absolute;
     background-color: white;
     transition: background-color 0.4s ease-in-out;
-    /* transform: translate3d(-101%,0 ,0); */
 }
 
 .main__sec1__column__button__fill{
@@ -111,7 +93,6 @@ html{
     position: absolute;
     top: 36%;
     z-index: 1;
-    /* transition: transform .35s ease-in-out,color .15s ease-out .1s; */
 }
 .main__se1__column__button__arrow{
     display: block;
@@ -168,4 +149,9 @@ html{
     right: 0;
     width: 489px;
     height: 489px;
+}
+
+/* main section 2 */
+.main__sec2{
+    margin: 0 70px;
 }

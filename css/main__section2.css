@@ -1,0 +1,33 @@
+/* main section 2 */
+
+@keyframes moveBackground {
+    from{
+        background-image: url(../img/main/sec2_1.jpg);
+        transition: all 0.4s linear;
+    }
+    to{
+        background-image: url(../img/main/sec2_2.jpg);
+        /* opacity: 1; */
+        transition: all 0.4s linear;   
+    }
+}
+
+.main__sec2{
+    background-color: #89cdb6;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main__sec2__background{
+    margin: 0 70px;
+    padding-top: 112px;
+    padding-bottom: 150px;
+}
+
+.main__sec2__background{
+    animation: moveBackground 3s infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}

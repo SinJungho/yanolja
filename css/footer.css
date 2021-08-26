@@ -1,0 +1,131 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 120px 70px 52px;
+    border-top: 1.5px solid black;
+}
+
+.footer__column{
+    margin-top: 22px;
+}
+
+.footer__column:last-child{
+    margin: 0;
+}
+
+.footer__column___info{
+    margin-top: 52px;
+}
+
+.footer__column___info ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.footer__column___info ul li a span{
+    margin-right: 10px;
+}
+
+/* button */
+
+.main__se4__column__button__box{
+    position: relative;
+    width: 368px;
+    height: 55px;
+    opacity: 1;
+    transition: transform 1s linear,opacity 1s linear;
+}
+
+.main__sec4__column__button{
+    width: 368px;
+    height: 55px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    background-color: white;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.main__sec4__column__button__fill{
+    width: 368px;
+    height: 57px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: #fe3478;
+    transform: translate3d(-101%,0,0);
+    transition: .35s ease-in-out;
+    opacity: 0;
+}
+
+.main__sec4__column__button__text{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    position: absolute;
+    top: 36%;
+    z-index: 1;
+}
+.main__se4__column__button__arrow{
+    display: block;
+    position: absolute;
+    top: 32%;
+    right: 0;
+    margin-right: 10px;
+}
+
+.main__se4__column__button__arrow-white{
+    opacity: 0;
+}
+
+.main__se4__column__button__box:hover .main__se4__column__button__arrow-white{
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 34%;
+}
+
+.main__se4__column__button__box:hover .main__se4__column__button__arrow-black{
+    opacity: 0;
+}
+
+.main__sec4__column__button img{
+    margin-right: 10px;
+}
+
+.main__se4__column__button__box:hover .main__sec4__column__button__fill { 
+    transform: translate3d(0%,0,0);
+    opacity: 1;
+}
+
+.main__se4__column__button__box:hover .main__sec4__column__button__text { 
+    color: white;
+    transition: .35s ease-in-out;
+}
+
+/* icon list */
+
+.footer__column__icons{
+    margin-top: 52px;
+}
+
+.footer__column__icons span{
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.footer__column__icons ul{
+    display: flex;
+}
+
+.footer__column__icons ul li{
+    margin-right: 10px;
+}
+
+.footer__column__icons ul li a img{
+    width: 24px;
+    height: 24px;
+}

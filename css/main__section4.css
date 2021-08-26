@@ -1,0 +1,42 @@
+.main__sec4{
+    margin-top: 40px;
+    display: flex;
+}
+
+.main__sec4__column{
+    margin: 0 70px;
+}
+
+.main__sec4__column__text{
+
+}
+
+.main__sec4__column__text__title{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.main__sec4__column__text__sub{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+.main__sec4__column__img{
+    margin-top: 26px;
+}
+
+.main__sec4__column__img img{
+    border-radius: 50%;
+    transition: all 0.34s ease-in-out;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.main__sec4__column__img:hover img{
+    transform: scale(1.1);
+}
+
